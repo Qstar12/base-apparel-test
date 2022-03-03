@@ -1,0 +1,322 @@
+p {
+  text-align: center;
+}
+@media (min-width: 900px) {
+  p {
+    text-align: left;
+  }
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-md);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10.83px;
+}
+@media (min-width: 900px) {
+  span {
+    margin-bottom: var(--sub-mb);
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    letter-spacing: 17.32px;
+    align-items: flex-start;
+  }
+}
+
+span p:first-of-type {
+  color: var(--desaturatedRed);
+  letter-spacing: 10.83px;
+  font-weight: 300;
+}
+@media (min-width: 900px) {
+  span p:first-of-type {
+    text-align: left;
+    font-size: var(--fs-lg);
+  }
+}
+
+input {
+  position: absolute;
+  outline: none;
+  border: 1px solid var(--desaturatedRed);
+  border-radius: 30px;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  height: 48px;
+  padding-left: 30px;
+}
+
+form button:hover {
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  cursor: pointer;
+  box-shadow: 0px 0px 12px 2px pink;
+}
+
+#myBtn:focus {
+  color: pink;
+}
+
+:root {
+  --desaturatedRed: hsl(0, 15%, 44%);
+  --softRed: hsl(0, 55%, 46%);
+  --darkGrayishRed: hsl(0, 11%, 96%);
+  --ff-primary: "Josefin Sans", sans-serif;
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 2.5rem;
+  --fs-lg: 4rem;
+  --img-wth: 310px;
+  --img-ht: 250px;
+  --img-mb: 4rem;
+  --sec-mar: 0rem 2rem 4.57rem 2rem;
+  --sec-ht: 122px;
+  --snippet-mar: 0rem 0rem 2rem 0rem;
+  --snippet-LH: 1.75rem;
+  --head-pad: 0rem 4.75rem 0rem 4.75rem;
+  --form-pad: 5.75em;
+  --head-mb: 2.125rem;
+  --sub-pad: 1rem;
+  --sub-mb: 2rem;
+  --Linear: 135deg, hsl(0, 80%, 86%), hsl(0, 29%, 55%);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  background-color: #f8bfbf3b;
+}
+@media (min-width: 900px) {
+  body {
+    background-image: url(../base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+  }
+}
+
+.header {
+  margin: 2rem 15.1875rem 2rem 2rem;
+}
+@media (min-width: 900px) {
+  .header {
+    position: absolute;
+    padding: 2rem 0;
+    margin-left: 7rem;
+    width: 158px;
+    height: 33px;
+  }
+}
+
+.header > img {
+  width: 100px;
+  height: 20.89px;
+}
+@media (min-width: 900px) {
+  .header > img {
+    width: 158px;
+    height: 33px;
+    margin: auto;
+    padding: auto;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, white #fff5f5);
+  padding-bottom: var(--form-pad);
+  justify-content: start;
+}
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 491px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 900px) {
+  .title {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.snippet {
+  color: var(--desaturatedRed);
+  margin: var(--snippet-mar);
+  line-height: 1.375rem;
+  font-size: var(--fs-sm);
+  font-weight: 400;
+}
+@media (min-width: 900px) {
+  .snippet {
+    font-size: var(--fs-base);
+    line-height: var(--snippet-LH);
+  }
+}
+
+.container .left {
+  width: 100%;
+  height: auto;
+  padding: 0px 30px 0 30px;
+}
+@media (min-width: 900px) {
+  .container .left {
+    max-width: 498px;
+    margin: 14.625rem 13.75rem 9.5rem 5rem;
+  }
+}
+
+.container .right {
+  background-image: url(../base-apparel-coming-soon-master/images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: var(--img-ht);
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: var(--img-mb);
+}
+@media (min-width: 900px) {
+  .container .right {
+    height: 100vh;
+    margin-bottom: 0;
+    background-image: url(../base-apparel-coming-soon-master/images/hero-desktop.jpg);
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
+.container form {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  outline: none;
+}
+
+.container form .error-icon {
+  display: inline-block;
+  position: absolute;
+  top: 24%;
+  right: 24%;
+  display: none;
+}
+@media (min-width: 375px) and (min-width: 450px) {
+  .container form .error-icon {
+    display: inline-block;
+    position: absolute;
+    top: 24%;
+    right: 18%;
+    display: none;
+  }
+}
+
+.container form.error .error-icon {
+  display: block;
+  color: red;
+}
+
+.container form.error .error-text {
+  display: block;
+  color: #db0101;
+  font-size: 1rem;
+}
+
+.container form.error input {
+  border: 1px solid red;
+}
+
+.container form .error-text {
+  position: absolute;
+  top: 120%;
+  left: 10%;
+  font-size: var(--fs-base);
+  display: none;
+}
+
+.container form input::-moz-placeholder {
+  color: var(--desaturatedRed);
+  opacity: 0.8;
+}
+
+.container form input:-ms-input-placeholder {
+  color: var(--desaturatedRed);
+  opacity: 0.8;
+}
+
+.container form input::placeholder {
+  color: var(--desaturatedRed);
+  opacity: 0.8;
+}
+
+.email-input:focus {
+  color: var(--desaturatedRed);
+  opacity: 0.8;
+}
+
+.onClick {
+  width: 64px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  box-shadow: 0px 2px 2px var(--desaturatedRed);
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  .onClick {
+    cursor: pointer;
+  }
+}
+
+.arrow {
+  width: 1rem;
+  margin-left: 0.5rem;
+}
+
+.arrow path {
+  stroke: white;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.error-icon:focus {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

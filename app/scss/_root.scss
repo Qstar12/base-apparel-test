@@ -1,0 +1,41 @@
+
+
+:root {
+
+    // Colors
+
+    --desaturatedRed: hsl(0, 36%, 70%);
+    --softRed: hsl(0, 93%, 68%);
+    --darkGrayishRed: hsk(0, 6%, 24%);
+
+    // Font
+
+    --ff-primary: 'Josefin Sans', sans-serif;
+
+    // Font Sizes
+    --fs-base: 1rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 2.5rem;
+    --fs-lg: 4rem;
+
+    // Spacing & Sizing
+    --img-wth: 310px;
+    --img-ht: 250px;
+    --img-mb: 4rem;
+    --sec-mar: 0rem 2rem 4.57rem 2rem;
+    --sec-ht: 122px;
+    --snippet-mar: 0rem 0rem 2rem 0rem; 
+    --snippet-LH: 1.7px;
+    --head-pad: 0rem 4.75rem 0rem 4.75rem;
+    --form-pad: 5.75em;
+    --head-mb: 2.125rem;
+    --sub-pad: 1rem;
+    --sub-mb: 2rem;
+    
+
+   
+    --Linear: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+    --Linear: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+
+
+};

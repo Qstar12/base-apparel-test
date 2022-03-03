@@ -1,0 +1,279 @@
+:root {
+
+    // Colors
+
+    --desaturatedRed: hsl(0, 15%, 44%);
+    --softRed: hsl(0, 55%, 46%);
+    --darkGrayishRed: hsl(0, 11%, 96%);
+
+    // Font
+
+    --ff-primary: 'Josefin Sans', sans-serif;
+
+    // Font Sizes
+    --fs-base: 1rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 2.5rem;
+    --fs-lg: 4rem;
+
+    // Spacing & Sizing
+    --img-wth: 310px;
+    --img-ht: 250px;
+    --img-mb: 4rem;
+    --sec-mar: 0rem 2rem 4.57rem 2rem;
+    --sec-ht: 122px;
+    --snippet-mar: 0rem 0rem 2rem 0rem;
+    --snippet-LH: 1.75rem;
+    --head-pad: 0rem 4.75rem 0rem 4.75rem;
+    --form-pad: 5.75em;
+    --head-mb: 2.125rem;
+    --sub-pad: 1rem;
+    --sub-mb: 2rem;
+
+    // Gradients
+
+    --Linear: 135deg, hsl(0, 80%, 86%), hsl(0, 29%, 55%);
+    // --Linear: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    
+
+
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    background-color: #f8bfbf3b;
+    @media (min-width: 900px) {
+        background-image: url(../base-apparel-coming-soon-master/images/bg-pattern-desktop.svg); 
+    }
+    
+}
+
+
+//Header
+.header {
+    margin: 2rem 15.1875rem 2rem 2rem;
+
+    @media (min-width: 900px) {
+      position: absolute;  
+      padding: 2rem 0; 
+      margin-left: 7rem;
+      width: 158px;
+      height: 33px;
+    }
+}
+
+.header > img {
+    width: 100px;
+    height: 20.89px;
+    
+
+    @media (min-width: 900px) {
+        width: 158px;
+        height: 33px;
+        margin: auto;
+        padding: auto;
+        
+      
+    }
+}
+
+
+
+//Main Content
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) hsl(0, 100%, 98%));
+    padding-bottom: var(--form-pad);
+    justify-content:start;
+    @media (min-width: 900px) {
+        flex-direction: row;
+        padding-top: 0;  
+        padding-bottom: 0;  
+        min-width: 491px;  
+    
+    }
+    
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;;
+    
+    @media (min-width: 900px) {
+        align-items:flex-start;
+        margin-bottom: 0;
+        
+    }
+}
+    
+
+.snippet {
+    color: var(--desaturatedRed);
+    margin: var( --snippet-mar);
+    line-height: 1.375rem;
+    font-size:var(--fs-sm);
+    font-weight: 400;
+    @media (min-width: 900px) {
+        
+        font-size: var(--fs-base);
+        line-height: var(--snippet-LH);     
+    }
+}
+
+
+
+//Split Content
+.container .left {
+    width: 100%;
+    height:auto;
+    padding: 0px 30px 0 30px;
+    
+    
+    @media (min-width: 900px) {
+        max-width: 498px;
+        margin: 14.625rem 13.75rem 9.5rem 5rem;
+       
+    }
+    
+   
+}
+
+.container .right {
+    background-image: url(../base-apparel-coming-soon-master/images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: var(--img-ht);
+    object-fit: cover;
+    margin-bottom: var(--img-mb);
+
+    @media (min-width: 900px) {
+        height: 100vh;
+        margin-bottom: 0;
+        background-image: url(../base-apparel-coming-soon-master/images/hero-desktop.jpg);
+        object-fit: fill;
+        
+    }
+    
+}
+
+
+
+//Form Validations
+.container form{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto; 
+    outline: none;
+}
+.container form .error-icon {
+    display: inline-block;
+    position: absolute;
+    top: 24%;
+    right: 24%;
+    display: none;
+
+    @media (min-width: 375px) and (min-width:450px){
+        display: inline-block;
+        position: absolute;
+        top: 24%;
+        right: 18%;
+        display: none;
+         
+    }
+ 
+}
+
+.container form.error .error-icon {
+    display: block;
+    color: red;
+}
+.container form.error .error-text {
+    display: block;
+    color: rgb(219, 1, 1);
+    font-size: 1rem;
+}
+.container form.error input {
+    border: 1px solid red;
+}
+.container form .error-text {
+    position: absolute;
+    top: 120%;
+    left: 10%;
+    font-size: var(--fs-base);
+    display: none;
+    
+}
+
+.container form input::placeholder {
+    color: var(--desaturatedRed);
+    opacity: .8;
+}
+
+.email-input:focus {
+    color: var(--desaturatedRed);
+    opacity: .8;
+
+}
+
+.onClick{
+    width: 64px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+    margin: auto;
+    border: none;
+    border-radius: 50px; 
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 2px 2px var(--desaturatedRed);
+    cursor: pointer;
+
+    
+
+    @media (min-width: 900px) {  
+        cursor: pointer;
+          
+    }
+                           
+}
+
+.arrow {
+    width: 1rem;
+    margin-left: .5rem;    
+}
+.arrow path {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    fill: none;       
+}
+
+.error-icon:focus {
+    color: red;
+}
