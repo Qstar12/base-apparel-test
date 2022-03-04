@@ -30,15 +30,22 @@
 
     <!--Main Content-->
     <div class="container">
+
+
+      <!--Split of main content @ --bp-900px-->
       <div class="left">
         <div class="title">
-          <span
-            ><p>We're</p>
-            <p id="accent">coming soon</p></span
-          >
+          <div>
+            <h1 id="Accent">We're</h1>
+          </div>
+          <div>
+            <h1 id="noAccent">Coming soon</h1>
+          </div>
         </div>
-        <div class="snippet">
-          <p>
+
+        <!--Main body of paragraph-->
+        <div>
+          <p class="snippet">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
@@ -47,6 +54,7 @@
 
         <!--Form Input-->
         <form>
+          <!--Input feild for User Email Address-->
           <label>
             <input
               type="email"
@@ -54,24 +62,23 @@
               placeholder="Enter Email Address"
             />
           </label>
-          <label>
-            <img
-              class="error-icon"
-              role="img"
-              src="/images/icon-error.svg"
-              alt="This is a error icon"
-              aria="this is a error icon"
-            />
 
-            <button id="myBtn" class="onClick" alt="button" aria-label="button">
-              <svg viewBox="0 0 20 20" class="arrow" aria-label="icon">
-                <path d="M0 0 L10 10 L0 20 20"></path>
-              </svg>
-            </button>
-            <p id="error-text" class="error-text">
-              Please provide a valid email
-            </p>
-          </label>
+          <!--Form error-icon-->
+          <img
+            class="error-icon"
+            src="/images/icon-error.svg"
+            alt="This is a error icon"
+          />
+
+          <!--Button-->
+          <button id="myBtn"alt="button">
+            <svg viewBox="0 0 20 20" class="arrow" aria-label="icon">
+              <path d="M0 0 L10 10 L0 20 20"></path>
+            </svg>
+          </button>
+
+          <!--Error Text-->
+          <p id="error-text" class="error-text">Please provide a valid email</p>
         </form>
 
         <!--Main Image-->

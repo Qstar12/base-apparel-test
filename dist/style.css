@@ -7,35 +7,37 @@ p {
   }
 }
 
-span {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#Accent {
+  color: var(--desaturatedRed);
   font-size: var(--fs-md);
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 10.83px;
+  line-height: 2.625rem;
 }
 @media (min-width: 900px) {
-  span {
-    margin-bottom: var(--sub-mb);
+  #Accent {
+    text-align: left;
     font-size: var(--fs-lg);
-    font-weight: 400;
-    letter-spacing: 17.32px;
-    align-items: flex-start;
+    line-height: 4rem;
   }
 }
 
-span p:first-of-type {
-  color: var(--desaturatedRed);
+#noAccent {
+  font-size: var(--fs-md);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
   letter-spacing: 10.83px;
-  font-weight: 300;
+  line-height: 2.625rem;
 }
 @media (min-width: 900px) {
-  span p:first-of-type {
+  #noAccent {
     text-align: left;
     font-size: var(--fs-lg);
+    line-height: 4.4375rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -49,6 +51,27 @@ input {
   bottom: 0;
   height: 48px;
   padding-left: 30px;
+}
+
+#myBtn {
+  width: 64px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  box-shadow: 0px 2px 2px var(--desaturatedRed);
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  #myBtn {
+    cursor: pointer;
+    width: 100px;
+  }
 }
 
 form button:hover {
@@ -169,12 +192,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--sub-pad);
 }
 @media (min-width: 900px) {
   .title {
     align-items: flex-start;
     margin-bottom: 0;
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    letter-spacing: 17.32px;
+    text-align: left;
   }
 }
 
@@ -246,7 +273,7 @@ body {
     display: inline-block;
     position: absolute;
     top: 24%;
-    right: 26%;
+    right: 30%;
     display: none;
   }
 }
@@ -292,27 +319,6 @@ body {
 .email-input:focus {
   color: var(--desaturatedRed);
   opacity: 0.8;
-}
-
-.onClick {
-  width: 64px;
-  height: 48px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  outline: none;
-  margin: auto;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
-  box-shadow: 0px 2px 2px var(--desaturatedRed);
-  cursor: pointer;
-}
-@media (min-width: 900px) {
-  .onClick {
-    cursor: pointer;
-    width: 100px;
-  }
 }
 
 .arrow {

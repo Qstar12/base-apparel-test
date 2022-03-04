@@ -1,6 +1,6 @@
 const form = document.querySelector('.container form');
 const email = document.querySelector('.container form input[type=email]');
-const myBtn = document.getElementById('myBtn');
+
 
 
 
