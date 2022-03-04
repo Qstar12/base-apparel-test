@@ -22,70 +22,84 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <header class="header">
-      <img src="/images/logo.svg" alt="This is a logo" />
-    </header>
+    
+      <header class="header">
+        <img src="/images/logo.svg" alt="This is a logo" />
+      </header>
 
-    <!--Main Content-->
+      <!--Main Content-->
+      <div class="container">
 
-    <div class="container">
-      <!--Split of main content-->
-      <main>
+        <!--Split of main content--> 
         <div class="left">
-          <div class="title">
-            <div>
-              <h1 id="Accent">We're</h1>
+          <main>
+            <div class="title">
+              <div>
+                <h1 id="Accent">We're</h1>
+              </div>
+              <div>
+                <h2 id="noAccent">Coming soon</h2>
+              </div>
             </div>
-            <div>
-              <h2 id="noAccent">Coming soon</h2>
-            </div>
-          </div>
+          </main>
+          
+        
+
 
           <!--Main body of paragraph-->
-          <div>
-            <h3 class="snippet">
-              Hello fellow shoppers! We're currently building our new fashion
-              store. Add your email below to stay up-to-date with announcements
-              and our launch deals.
-            </h3>
-          </div>
+          <main>
+            <div>
+              <h3 class="snippet">
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with announcements
+                and our launch deals.
+              </h3>
+            </div>
+          </main>
+          
 
           <!--Form Input-->
-          <form>
-            <!--Input feild for User Email Address-->
-            <label>
-              <input
-                type="email"
-                class="email-input"
-                placeholder="Enter Email Address"
+          <main>
+            <form>
+              <!--Input feild for User Email Address-->
+              <label>
+                <input
+                  type="email"
+                  class="email-input"
+                  placeholder="Enter Email Address"
+                />
+              </label>
+  
+              <!--Form error-icon-->
+              <img
+                class="error-icon"
+                src="/images/icon-error.svg"
+                alt="This is a error icon"
               />
-            </label>
-
-            <!--Form error-icon-->
-            <img
-              class="error-icon"
-              src="/images/icon-error.svg"
-              alt="This is a error icon"
-            />
-
-            <!--Button-->
-            <button id="myBtn">
-              <svg viewBox="0 0 20 20" class="arrow" aria-label="icon">
-                <path d="M0 0 L10 10 L0 20 20"></path>
-              </svg>
-            </button>
-
-            <!--Error Text-->
-            <h4 id="error-text" class="error-text">
-              Please provide a valid email
-            </h4>
-          </form>
+  
+              <!--Button-->
+              <button id="myBtn">
+                <svg viewBox="0 0 20 20" class="arrow" aria-label="icon">
+                  <path d="M0 0 L10 10 L0 20 20"></path>
+                </svg>
+              </button>
+  
+              <!--Error Text-->
+              <h4 id="error-text" class="error-text">
+                Please provide a valid email
+              </h4>
+            </form>
+          </main> 
         </div>
+    
 
         <!--Split of main content-->
         <div class="right"></div>
-      </main>
-    </div>
+      </div>
+    </main>
+
+
+
 
     <script src="/app/js/script.js"></script>
   </body>
