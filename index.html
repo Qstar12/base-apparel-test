@@ -19,13 +19,13 @@
     />
     <link rel="stylesheet" href="/dist/style.css" />
 
-    <link src="/app/js/script.js" />
+
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
     <header class="header">
-      <img src="/images/logo.svg" alt="" />
+      <img src="/images/logo.svg" alt="This is a logo" />
     </header>
 
     <!--Main Content-->
@@ -33,27 +33,27 @@
 
 
       <!--Split of main content-->
-      <div class="left" role="this is the header">
+      <div class="left">
         <div class="title">
           <div>
-            <h1 id="Accent">We're</h1>
+            <h1 id="Accent" role="This is a heading">We're</h1>
           </div>
           <div>
-            <h1 id="noAccent">Coming soon</h1>
+            <h2 id="noAccent" role="This is a sub-title">Coming soon</h2>
           </div>
         </div>
 
         <!--Main body of paragraph-->
-        <div role="this is the main paragraph">
-          <p class="snippet">
+        <div>
+          <h3 class="snippet">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
-          </p>
+          </h3>
         </div>
 
         <!--Form Input-->
-        <form role="this is the form">
+        <form>
           <!--Input feild for User Email Address-->
           <label>
             <input
@@ -64,26 +64,26 @@
           </label>
 
           <!--Form error-icon-->
-          <img role="this is the error icon"
+          <img
             class="error-icon"
             src="/images/icon-error.svg"
             alt="This is a error icon"
           />
 
           <!--Button-->
-          <button id="myBtn" fole="this is the button">
+          <button id="myBtn">
             <svg viewBox="0 0 20 20" class="arrow" aria-label="icon">
               <path d="M0 0 L10 10 L0 20 20"></path>
             </svg>
           </button>
 
           <!--Error Text-->
-          <p id="error-text" class="error-text">Please provide a valid email</p>
+          <h4 id="error-text" class="error-text">Please provide a valid email</h4>
         </form>
       </div>
 
       <!--Split of main content-->
-      <div class="right" role="this is a picture"></div>
+      <div class="right"></div>
     </div>
 
     <script src="/app/js/script.js"></script>
