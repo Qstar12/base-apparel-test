@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="/dist/style.css" />
 
-    <link defer="script.js" />
+    <link src="/app/js/script.js" />
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
@@ -32,8 +32,8 @@
     <div class="container">
 
 
-      <!--Split of main content @ --bp-900px-->
-      <div class="left">
+      <!--Split of main content-->
+      <div class="left" role="this is the header">
         <div class="title">
           <div>
             <h1 id="Accent">We're</h1>
@@ -44,7 +44,7 @@
         </div>
 
         <!--Main body of paragraph-->
-        <div>
+        <div role="this is the main paragraph">
           <p class="snippet">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
@@ -53,7 +53,7 @@
         </div>
 
         <!--Form Input-->
-        <form>
+        <form role="this is the form">
           <!--Input feild for User Email Address-->
           <label>
             <input
@@ -64,14 +64,14 @@
           </label>
 
           <!--Form error-icon-->
-          <img
+          <img role="this is the error icon"
             class="error-icon"
             src="/images/icon-error.svg"
             alt="This is a error icon"
           />
 
           <!--Button-->
-          <button id="myBtn"alt="button">
+          <button id="myBtn" fole="this is the button">
             <svg viewBox="0 0 20 20" class="arrow" aria-label="icon">
               <path d="M0 0 L10 10 L0 20 20"></path>
             </svg>
@@ -80,10 +80,10 @@
           <!--Error Text-->
           <p id="error-text" class="error-text">Please provide a valid email</p>
         </form>
-
-        <!--Main Image-->
       </div>
-      <div class="right"></div>
+
+      <!--Split of main content-->
+      <div class="right" role="this is a picture"></div>
     </div>
 
     <script src="/app/js/script.js"></script>

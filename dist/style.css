@@ -227,7 +227,8 @@ body {
 @media (min-width: 900px) {
   .container .left {
     max-width: 498px;
-    margin: 14.625rem 13.75rem 9.5rem 5rem;
+    margin: 14.625rem 13.75rem 9.5rem 10.3125rem;
+    padding: 0;
   }
 }
 
