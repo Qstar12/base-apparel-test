@@ -218,6 +218,7 @@ body {
     font-size: var(--fs-base);
     line-height: var(--snippet-LH);
     text-align: left;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -228,7 +229,7 @@ body {
 }
 @media (min-width: 900px) {
   .container .left {
-    max-width: 498px;
+    max-width: 445px;
     margin: 14.625rem 13.75rem 9.5rem 10.3125rem;
     padding: 0;
   }
@@ -250,6 +251,13 @@ body {
     height: 100vh;
     margin-bottom: 0;
     background-image: url(../images/hero-desktop.jpg);
+  }
+}
+
+@media (min-width: 900px) {
+  .right img {
+    max-width: 610px;
+    max-height: 800px;
   }
 }
 
